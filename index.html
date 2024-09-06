@@ -11,52 +11,82 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="dashboard">
       <div class="sidebar">
-        <h1 class="app-name">
-          <img src="assets/icons/dashboard.svg" alt="" />Dashboard
-        </h1>
-        <ul>
-          <li>
-            <a href=""><img src="assets/icons/home.svg" alt="" />Home</a>
-          </li>
-          <li>
-            <a href=""><img src="assets/icons/profile.svg" alt="" />Profile</a>
-          </li>
-          <li>
-            <a href=""><img src="assets/icons/message.svg" alt="" />Messages</a>
-          </li>
-          <li>
-            <a href=""><img src="assets/icons/history.svg" alt="" />History</a>
-          </li>
-          <li>
-            <a href=""><img src="assets/icons/task.svg" alt="" />Tasks</a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="assets/icons/community.svg" alt="" />Communities</a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><img src="assets/icons/settings.svg" alt="" />Settings</a
-            >
-          </li>
-          <li>
-            <a href=""><img src="assets/icons/support.svg" alt="" />Support</a>
-          </li>
-          <li>
-            <a href=""><img src="assets/icons/privacy.svg" alt="" />Privacy</a>
-          </li>
-        </ul>
+        <h1 class="app-name">Dashboard</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href=""><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-user"></i>Profile</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-envelope"></i>Messages</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-timeline"></i>History</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-list-check"></i>Tasks</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-users"></i>Communities</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-circle-info"></i>Support</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-shield"></i>Privacy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="header">
-        <form class="search-form">
-          <img src="assets/icons/magnify.svg" alt="magnify-icon" />
-          <input type="search" name="search" />
-        </form>
+        <div class="header-top">
+          <form class="search-form">
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </button>
+            <input type="search" name="search" class="search-input" />
+          </form>
+          <div class="notification">
+            <button class="notification-button">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </button>
+            <div class="user-profile">
+              <img src="assets/icons/icon.png" alt="" />
+              <h3>@Iqbalev</h3>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="greetings">
+            <img src="assets/icons/icon.png" alt="" />
+            <div class="owner-name">
+              <p>Hi there,</p>
+              <h2>Muhammad Iqbal 😊</h2>
+            </div>
+          </div>
+          <div class="main-actions">
+            <button class="new-button">New</button>
+            <button class="upload-button">Upload</button>
+            <button class="share-button">Share</button>
+          </div>
+        </div>
       </div>
       <div class="main">
         <section class="your-projects-container">
@@ -71,10 +101,16 @@
                   porro sit tempora!
                 </p>
               </div>
-              <div class="action-buttons">
-                <button class="favorite-button">Add to Favorite</button>
-                <button class="seen-button">Mark as Seen</button>
-                <button class="share-button">Share</button>
+              <div class="content-actions">
+                <button class="favorite-button">
+                  <i class="fa-regular fa-star"></i>
+                </button>
+                <button class="seen-button">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+                <button class="share-button">
+                  <i class="fa-regular fa-share-from-square"></i>
+                </button>
               </div>
             </div>
             <div class="your-project">
@@ -86,10 +122,16 @@
                   porro sit tempora!
                 </p>
               </div>
-              <div class="action-buttons">
-                <button class="favorite-button">Add to Favorite</button>
-                <button class="seen-button">Mark as Seen</button>
-                <button class="share-button">Share</button>
+              <div class="content-actions">
+                <button class="favorite-button">
+                  <i class="fa-regular fa-star"></i>
+                </button>
+                <button class="seen-button">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+                <button class="share-button">
+                  <i class="fa-regular fa-share-from-square"></i>
+                </button>
               </div>
             </div>
             <div class="your-project">
@@ -101,10 +143,16 @@
                   porro sit tempora!
                 </p>
               </div>
-              <div class="action-buttons">
-                <button class="favorite-button">Add to Favorite</button>
-                <button class="seen-button">Mark as Seen</button>
-                <button class="share-button">Share</button>
+              <div class="content-actions">
+                <button class="favorite-button">
+                  <i class="fa-regular fa-star"></i>
+                </button>
+                <button class="seen-button">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+                <button class="share-button">
+                  <i class="fa-regular fa-share-from-square"></i>
+                </button>
               </div>
             </div>
             <div class="your-project">
@@ -116,10 +164,16 @@
                   porro sit tempora!
                 </p>
               </div>
-              <div class="action-buttons">
-                <button class="favorite-button">Add to Favorite</button>
-                <button class="seen-button">Mark as Seen</button>
-                <button class="share-button">Share</button>
+              <div class="content-actions">
+                <button class="favorite-button">
+                  <i class="fa-regular fa-star"></i>
+                </button>
+                <button class="seen-button">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+                <button class="share-button">
+                  <i class="fa-regular fa-share-from-square"></i>
+                </button>
               </div>
             </div>
             <div class="your-project">
@@ -131,10 +185,16 @@
                   porro sit tempora!
                 </p>
               </div>
-              <div class="action-buttons">
-                <button class="favorite-button">Add to Favorite</button>
-                <button class="seen-button">Mark as Seen</button>
-                <button class="share-button">Share</button>
+              <div class="content-actions">
+                <button class="favorite-button">
+                  <i class="fa-regular fa-star"></i>
+                </button>
+                <button class="seen-button">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+                <button class="share-button">
+                  <i class="fa-regular fa-share-from-square"></i>
+                </button>
               </div>
             </div>
             <div class="your-project">
@@ -146,15 +206,20 @@
                   porro sit tempora!
                 </p>
               </div>
-              <div class="action-buttons">
-                <button class="favorite-button">Add to Favorite</button>
-                <button class="seen-button">Mark as Seen</button>
-                <button class="share-button">Share</button>
+              <div class="content-actions">
+                <button class="favorite-button">
+                  <i class="fa-regular fa-star"></i>
+                </button>
+                <button class="seen-button">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+                <button class="share-button">
+                  <i class="fa-regular fa-share-from-square"></i>
+                </button>
               </div>
             </div>
           </div>
         </section>
-
         <section class="announcements-trending-container">
           <div class="announcements-container">
             <h3 class="announcements-title">Announcements</h3>
@@ -182,7 +247,6 @@
               </div>
             </div>
           </div>
-
           <div class="trending-container">
             <h3 class="trending-title">Trending</h3>
             <div class="trending-cards">
