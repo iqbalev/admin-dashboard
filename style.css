@@ -34,28 +34,136 @@ button {
   grid-area: sidebar;
   padding: 20px;
   min-height: 100dvh;
-  background-color: #0284c7;
+  background-color: #38bdf8;
+}
+
+.app-name {
+  margin-bottom: 40px;
+  color: #f0f9ff;
+}
+
+.sidebar ul {
+  display: grid;
+  gap: 20px;
+}
+
+.sidebar nav ul li a {
+  color: #f0f9ff;
+  font-weight: bold;
+}
+
+.sidebar .fa-solid {
+  margin-right: 20px;
+  text-shadow: 1px 1px 1px #00000075;
 }
 
 .sidebar img {
   width: 30px;
+  height: 30px;
 }
 
 /* Header */
 .header {
   grid-area: header;
-  padding: 20px;
-  background-color: white;
+  padding: 10px 20px;
+  background-color: #f0f9ff;
+  box-shadow: 1px 1px 1px #00000075;
+  z-index: 1;
 }
 
-.header img {
-  width: 20px;
-  height: 20px;
+.header-top {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "search-form notification";
+  grid-template-columns: 1fr auto;
+  padding: 10px;
+  gap: 20px;
 }
 
-input {
-  border: 1px solid;
+.search-form {
+  grid-area: search-form;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.search-button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.search-input {
+  border: transparent;
   border-radius: 5px;
+  box-shadow: 1px 1px 1px #00000075;
+  padding: 5px 10px;
+}
+
+.notification {
+  grid-area: notification;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-self: end;
+  gap: 20px;
+}
+
+.notification-button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-areas: "greetings main-actions";
+  padding: 10px;
+  gap: 20px;
+}
+
+.greetings {
+  grid-area: greetings;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.greetings img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.main-actions {
+  display: grid;
+  grid-area: main-actions;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-self: center;
+  justify-self: end;
+}
+
+.main-actions button {
+  padding: 10px;
+  width: 100px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: #38bdf8;
+  color: #f0f9ff;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #00000075;
 }
 
 /* Main */
@@ -63,7 +171,7 @@ input {
   display: grid;
   grid-area: main;
   grid-template-columns: 2fr 1fr;
-  background-color: darkgray;
+  background-color: #d4d4d4;
   padding: 20px;
 }
 
@@ -83,9 +191,9 @@ input {
 .your-project {
   display: grid;
   gap: 50px;
-  border-left: 5px solid #ffa500;
+  border-left: 5px solid #fb923c;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #f0f9ff;
   padding: 15px;
 }
 
@@ -94,10 +202,18 @@ input {
   gap: 10px;
 }
 
-.action-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 5px;
+.content-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-self: end;
+  gap: 10px;
+}
+
+.content-actions button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .announcements-trending-container {
@@ -112,7 +228,9 @@ input {
 }
 
 .announcement {
-  background-color: #fff;
+  display: grid;
+  gap: 10px;
+  background-color: #f0f9ff;
   border-radius: 5px;
   padding: 15px;
 }
@@ -126,13 +244,18 @@ input {
 .trending {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   border-radius: 5px;
   padding: 15px;
-  background-color: #fff;
+  background-color: #f0f9ff;
 }
 .trending img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.trending-account {
+  display: grid;
+  gap: 5px;
 }
