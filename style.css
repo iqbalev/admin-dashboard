@@ -11,7 +11,7 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: #000;
+  color: #171717;
 }
 
 input,
@@ -27,14 +27,15 @@ button {
   grid-template-areas:
     "sidebar header"
     "sidebar main";
+  color: #171717;
 }
 
 /* Sidebar */
 .sidebar {
   grid-area: sidebar;
-  padding: 20px;
+  padding: 40px;
   min-height: 100dvh;
-  background-color: #38bdf8;
+  background-color: #0ea5e9;
 }
 
 .app-name {
@@ -55,6 +56,10 @@ button {
 .sidebar .fa-solid {
   margin-right: 20px;
   text-shadow: 1px 1px 1px #00000075;
+}
+
+.sidebar .fa-solid.fa-users {
+  margin-bottom: 40px;
 }
 
 .sidebar img {
@@ -159,8 +164,9 @@ button {
   padding: 10px;
   width: 100px;
   border: transparent;
-  border-radius: 5px;
-  background-color: #38bdf8;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: #0ea5e9;
   color: #f0f9ff;
   cursor: pointer;
   box-shadow: 1px 1px 1px #00000075;
@@ -170,7 +176,8 @@ button {
 .main {
   display: grid;
   grid-area: main;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: auto;
   background-color: #d4d4d4;
   padding: 20px;
 }
@@ -179,6 +186,11 @@ button {
 .announcements-title,
 .trending-title {
   padding: 0 10px;
+}
+
+.your-projects-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .your-project-cards {
@@ -195,10 +207,12 @@ button {
   border-radius: 5px;
   background-color: #f0f9ff;
   padding: 15px;
+  box-shadow: 1px 1px 1px #00000075;
 }
 
 .title-description {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -219,6 +233,11 @@ button {
 .announcements-trending-container {
   display: grid;
   gap: 20px;
+  grid-template-rows: auto 1fr;
+}
+
+.announcements-trending-container p {
+  font-size: 0.875rem;
 }
 
 .announcements-cards {
@@ -233,6 +252,7 @@ button {
   background-color: #f0f9ff;
   border-radius: 5px;
   padding: 15px;
+  box-shadow: 1px 1px 1px #00000075;
 }
 
 .trending-cards {
@@ -247,6 +267,7 @@ button {
   gap: 10px;
   border-radius: 5px;
   padding: 15px;
+  box-shadow: 1px 1px 1px #00000075;
   background-color: #f0f9ff;
 }
 .trending img {
